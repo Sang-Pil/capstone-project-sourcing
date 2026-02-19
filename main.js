@@ -99,10 +99,9 @@ class ProjectCard extends HTMLElement {
 
 customElements.define('project-card', ProjectCard);
 
-// Populate project listings and dropdowns when the DOM is ready
+// Populate project listings when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     const projectGrid = document.getElementById('project-grid');
-    const projectSelect = document.querySelector('select[name="projectInterest"]');
 
     placeholderProjects.forEach(project => {
         // Create and append project card
@@ -112,11 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
         projectCard.setAttribute('description', project.description);
         projectCard.setAttribute('keywords', project.keywords.join(','));
         projectGrid.appendChild(projectCard);
-
-        // Populate the student form dropdown
-        const option = document.createElement('option');
-        option.value = project.title;
-        option.textContent = project.title;
-        projectSelect.appendChild(option);
     });
 });

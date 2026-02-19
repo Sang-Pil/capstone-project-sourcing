@@ -17,7 +17,6 @@
             <ul>
                 <li><a href="#projects">Available Projects</a></li>
                 <li><a href="#sponsors">For Sponsors</a></li>
-                <li><a href="#students">For Students</a></li>
             </ul>
         </nav>
     </header>
@@ -41,27 +40,12 @@
         <section id="sponsors" class="form-section">
             <h2>For Industry Sponsors</h2>
             <p>Submit your project proposal and connect with top ASU talent.</p>
-            <form id="sponsor-form">
+            <form id="sponsor-form" action="https://formspree.io/f/mlgwwjgo" method="POST">
                 <input type="text" name="companyName" placeholder="Company Name" required>
                 <input type="email" name="email" placeholder="Contact Email" required>
                 <input type="text" name="projectName" placeholder="Project Title" required>
                 <textarea name="projectDescription" placeholder="Project Description" rows="5" required></textarea>
                 <button type="submit" class="submit-button">Submit Proposal</button>
-            </form>
-        </section>
-
-        <section id="students" class="form-section">
-            <h2>For Students</h2>
-            <p>Apply for a project and gain real-world experience.</p>
-            <form id="student-form">
-                <input type="text" name="studentName" placeholder="Your Name" required>
-                <input type="email" name="studentEmail" placeholder="Your Email" required>
-                <select name="projectInterest" required>
-                    <option value="" disabled selected>Select a Project of Interest</option>
-                    <!-- Options will be populated by JavaScript -->
-                </select>
-                <textarea name="studentComments" placeholder="Tell us about your interest and skills" rows="5"></textarea>
-                <button type="submit" class="submit-button">Express Interest</button>
             </form>
         </section>
     </main>
