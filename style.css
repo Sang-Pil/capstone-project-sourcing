@@ -28,6 +28,17 @@ header {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .logo img.asu-logo {
+    height: 60px;
+    width: auto;
+}
+
 header .logo h1 {
     font-family: var(--font-heading);
     color: var(--asu-maroon);
