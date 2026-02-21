@@ -20,10 +20,10 @@ const placeholderProjects = [
         keywords: ["AI workflow design", "natural language processing (NLP) and document intelligence", "data governance and ethical AI practices", "business process mapping and improvement", "stakeholder and change management", "AI strategy and implementation planning"],
     },
     {
-        title: "OCR for court forms",
+        title: "OCR for court forms - Featured Project",
         sponsor: "Various Sponsors (Justice/Technology System)",
-        description: "Proposal 2. OCR for court forms (Video: https://www.youtube.com/watch?v=993egZITt1I).",
-        keywords: ["Data preprocessing and wrangling", "text analytics and NLP fundamentals", "model evaluation and performance metrics for OCR", "process automation analytics", "business insight communication and visualization"],
+        description: `Explore our featured project on OCR for court forms! See a demonstration here: <a href="https://www.youtube.com/watch?v=993egZITt1I" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">Watch Video (OCR for Court Forms)</a>. (Note: Direct screenshots/embeds are not possible in this card view). We will contact industry sponsors for further details and to get their contact person's name.`,
+        keywords: ["Data preprocessing and wrangling", "text analytics and NLP fundamentals", "model evaluation and performance metrics for OCR", "process automation analytics", "business insight communication and visualization", "Video Demo"],
     },
     {
         title: "Designing AI-Driven Athlete–Brand Matching and Content Personalization Systems for the NIL Ecosystem",
@@ -40,8 +40,8 @@ const placeholderProjects = [
     {
         title: "Generative AI System for Automated Repair Disposition Reports",
         sponsor: "Various Sponsors (Industrial Tech.)",
-        description: "Generative AI System for Automated Repair Disposition Reports.",
-        keywords: ["Prompt engineering", "fine-tuning LLMs (OpenAI, Gemini, or Claude)", "text summarization (Video on related OCR concepts: https://www.youtube.com/watch?v=993egZITt1I)", "Python/NLP (LangChain, Hugging Face)", "domain adaptation for technical documentation with AI"],
+        description: `Generative AI System for Automated Repair Disposition Reports. Related to text summarization concepts and OCR. Watch a related video on OCR here: <a href="https://www.youtube.com/watch?v=993egZITt1I" target="_blank" style="color: var(--accent-blue); text-decoration: underline;">Watch Video (OCR Concepts)</a>.`,
+        keywords: ["Prompt engineering", "fine-tuning LLMs (OpenAI, Gemini, or Claude)", "text summarization", "Python/NLP (LangChain, Hugging Face)", "domain adaptation for technical documentation with AI", "OCR Concepts Video"],
     },
     {
         title: "Multi-Agent AI System for Supply Chain Quality Monitoring",
