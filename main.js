@@ -204,14 +204,29 @@ customElements.define('project-card', ProjectCard);
 // Populate project listings when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     const projectGrid = document.getElementById('project-grid');
+    const viewAllButton = document.getElementById('view-all-button');
+    const INITIAL_DISPLAY_COUNT = 5;
 
-    placeholderProjects.forEach(project => {
-        // Create and append project card
+    // Function to create and append a project card
+    const createProjectCard = (project) => {
         const projectCard = document.createElement('project-card');
         projectCard.setAttribute('title', project.title);
         projectCard.setAttribute('sponsor', project.sponsor);
         projectCard.setAttribute('description', project.description);
         projectCard.setAttribute('keywords', project.keywords.join(','));
         projectGrid.appendChild(projectCard);
-    });
+    };
+
+    // Initially display a limited number of projects
+    placeholderProjects.slice(0, INITIAL_DISPLAY_COUNT).forEach(createProjectCard);
+
+    // If there are more projects than initially displayed, show the "View All" button
+    if (placeholderProjects.length > INITIAL_DISPLAY_COUNT) {
+        viewAllButton.style.display = 'block'; // Make button visible
+        viewAllButton.addEventListener('click', () => {
+            // Display the rest of the projects
+            placeholderProjects.slice(INITIAL_DISPLAY_COUNT).forEach(createProjectCard);
+            viewAllButton.style.display = 'none'; // Hide button after all projects are displayed
+        });
+    }
 });
